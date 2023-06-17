@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import { useRef, useState } from "react";
 
-function App() {
+const App = () => {
+  const scrollRef = useRef(null);
+  const [navH, setNavH] = useState("7rem");
+
+  const scrollHandler = () => {
+    if (scrollRef.current.scrollTop > 0) {
+      setNavH("3rem");
+      console.log(navH);
+    } else {
+      setNavH("7rem");
+      console.log(navH);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      ref={scrollRef}
+      onScroll={scrollHandler}
+      style={{ height: "100vh", overflow: "auto" }}
+    >
+      <NavBar navH={navH} />
+      <Routes>
+        <Route path="" element={<Home />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
