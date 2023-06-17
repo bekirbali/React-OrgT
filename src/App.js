@@ -3,6 +3,7 @@ import "./App.scss";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import { useRef, useState } from "react";
+import Footer from "./components/Footer";
 
 const App = () => {
   const scrollRef = useRef(null);
@@ -28,6 +29,7 @@ const App = () => {
       <Routes>
         <Route path="" element={<Home />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
