@@ -1,9 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/navbar.module.scss";
 
-const NavBar = ({ navH }) => {
-  const [active, setActive] = useState("");
-
+const NavBar = ({ navH, active, setActive }) => {
   const scrollHandler = () => {
     console.log(window.scrollY);
   };
@@ -18,7 +16,11 @@ const NavBar = ({ navH }) => {
         <li>
           <a
             className={active === "about" ? styles.active : ""}
-            onClick={() => setActive("about")}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("about");
+              }, 500)
+            }
             href="#about"
           >
             About
@@ -27,7 +29,11 @@ const NavBar = ({ navH }) => {
         <li>
           <a
             className={active === "contact" ? styles.active : ""}
-            onClick={() => setActive("contact")}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("contact");
+              }, 500)
+            }
             href="#contact"
           >
             Contact
@@ -36,7 +42,11 @@ const NavBar = ({ navH }) => {
         <li>
           <a
             className={active === "donate" ? styles.active : ""}
-            onClick={() => setActive("donate")}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("donate");
+              }, 500)
+            }
             href="#donate"
           >
             Donate
@@ -45,7 +55,11 @@ const NavBar = ({ navH }) => {
         <li>
           <a
             className={active === "involved" ? styles.active : ""}
-            onClick={() => setActive("involved")}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("involved");
+              }, 500)
+            }
             href="#involved"
           >
             Get Involved
@@ -54,7 +68,11 @@ const NavBar = ({ navH }) => {
         <li>
           <a
             className={active === "projects" ? styles.active : ""}
-            onClick={() => setActive("projects")}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("projects");
+              }, 500)
+            }
             href="#projects"
           >
             Projects
@@ -63,7 +81,11 @@ const NavBar = ({ navH }) => {
         <li>
           <a
             className={active === "stories" ? styles.active : ""}
-            onClick={() => setActive("stories")}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("stories");
+              }, 500)
+            }
             href="#stories"
           >
             Stories
@@ -72,7 +94,11 @@ const NavBar = ({ navH }) => {
         <li>
           <a
             className={active === "team" ? styles.active : ""}
-            onClick={() => setActive("team")}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("team");
+              }, 500)
+            }
             href="#team"
           >
             Team

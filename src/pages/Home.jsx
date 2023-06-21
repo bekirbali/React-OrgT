@@ -21,13 +21,12 @@ const Home = () => {
         </div>
       </div>
       <About />
-      {/*
       <Contact />
       <Donate />
       <GetInvolved />
       <Projects />
       <Stories />
-      <Team /> */}
+      <Team />
     </div>
   );
 };
