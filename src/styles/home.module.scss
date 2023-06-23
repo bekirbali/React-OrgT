@@ -1,25 +1,30 @@
 .landing {
-  background: url("../assets/backgroundImage.jpg") no-repeat center center fixed;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.534),
+      rgba(0, 0, 0, 0.623)
+    ),
+    url("../assets/backgroundImage.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-shadow: 0 0 50px 10px rgba(218, 241, 7, 0.925);
 }
 
 .opening {
   color: rgb(255, 255, 255);
-  //   backdrop-filter: blur(0.083rem);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.932);
+  backdrop-filter: blur(0.163rem);
 
   .romanian-text {
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 0 10px 10px rgba(96, 236, 103, 0.5);
+    box-shadow: 0 0 10px 10px rgba(153, 150, 110, 0.514);
   }
 
   .english-text {
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 0 10px 10px rgba(96, 236, 103, 0.5);
+    box-shadow: 0 0 10px 10px rgba(153, 150, 110, 0.514);
   }
 }
