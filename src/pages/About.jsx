@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
+import styles from "../styles/about.module.scss";
+
 const About = () => {
   return (
-    <div id="about">
+    <div id="about" className={styles.about}>
       Social reintegration of homeless people The program "change lives" aims to
       help homeless people in Bihor county to start by providing a living space,
       reintegration into the labor market for those who have potential, medical
