@@ -1,21 +1,8 @@
 import React, { useState } from "react";
 
 const About = () => {
-  const [over, setOver] = useState(false);
-  const overHandler = () => {
-    setOver(true);
-  };
-  const leaveHandler = () => {
-    setOver(false);
-  };
   return (
-    <div
-      onMouseOver={overHandler}
-      onMouseLeave={leaveHandler}
-      id="about"
-      className={"h-[calc(100vh-24px)] bg-yellow-400"}
-      style={{ backgroundColor: over ? "red" : "yellow" }}
-    >
+    <div id="about">
       Social reintegration of homeless people The program "change lives" aims to
       help homeless people in Bihor county to start by providing a living space,
       reintegration into the labor market for those who have potential, medical
