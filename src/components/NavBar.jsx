@@ -1,4 +1,5 @@
 import styles from "../styles/navbar.module.scss";
+import logo from "../assets/logo.png";
 
 const NavBar = ({ navH, active, setActive }) => {
   const scrollHandler = () => {
@@ -11,6 +12,10 @@ const NavBar = ({ navH, active, setActive }) => {
       className={styles.navbar}
       style={{ height: navH }}
     >
+      <div className={styles.logo}>
+        <img src={logo} alt="" />
+        <h2>Change Lives</h2>
+      </div>
       <ul>
         <li>
           <a
@@ -25,45 +30,7 @@ const NavBar = ({ navH, active, setActive }) => {
             About
           </a>
         </li>
-        <li>
-          <a
-            className={active === "contact" ? styles.active : ""}
-            onClick={() =>
-              setTimeout(() => {
-                setActive("contact");
-              }, 500)
-            }
-            href="#contact"
-          >
-            Contact
-          </a>
-        </li>
-        <li>
-          <a
-            className={active === "donate" ? styles.active : ""}
-            onClick={() =>
-              setTimeout(() => {
-                setActive("donate");
-              }, 500)
-            }
-            href="#donate"
-          >
-            Donate
-          </a>
-        </li>
-        <li>
-          <a
-            className={active === "involved" ? styles.active : ""}
-            onClick={() =>
-              setTimeout(() => {
-                setActive("involved");
-              }, 500)
-            }
-            href="#involved"
-          >
-            Get Involved
-          </a>
-        </li>
+
         <li>
           <a
             className={active === "projects" ? styles.active : ""}
@@ -103,6 +70,45 @@ const NavBar = ({ navH, active, setActive }) => {
             Team
           </a>
         </li>
+        <li>
+          <a
+            className={active === "donate" ? styles.active : ""}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("donate");
+              }, 500)
+            }
+            href="#donate"
+          >
+            Donate
+          </a>
+        </li>
+        <li>
+          <a
+            className={active === "involved" ? styles.active : ""}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("involved");
+              }, 500)
+            }
+            href="#involved"
+          >
+            Get Involved
+          </a>
+        </li>
+        {/* <li>
+          <a
+            className={active === "contact" ? styles.active : ""}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("contact");
+              }, 500)
+            }
+            href="#contact"
+          >
+            Contact
+          </a>
+        </li> */}
       </ul>
     </div>
   );

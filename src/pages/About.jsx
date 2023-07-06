@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 import styles from "../styles/about.module.scss";
 
 const About = () => {
   return (
     <div id="about" className={styles.about}>
-      <div>
+      <div className={styles.title}>
         <h1>ASSOCIATION "CHANGED LIVES"</h1>
         <h3>Social reintegration of homeless people</h3>
       </div>
