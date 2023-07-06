@@ -32,12 +32,12 @@ const Home = ({ iconClick, active }) => {
         )}
       </div>
       <About />
-      <Contact />
-      <Donate />
-      <GetInvolved />
       <Projects />
       <Stories />
       <Team />
+      <Donate />
+      <GetInvolved />
+      {/* <Contact /> */}
     </>
   );
 };
