@@ -28,3 +28,14 @@
     box-shadow: 0 0 10px 10px rgba(153, 150, 110, 0.514);
   }
 }
+
+@media screen and (max-width: 968px) {
+  .opening {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0 2.5rem;
+  }
+}
