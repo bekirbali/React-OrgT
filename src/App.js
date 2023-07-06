@@ -4,18 +4,19 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import { useRef, useState } from "react";
 import Footer from "./components/Footer";
+import i18n from "./utils/i18n";
 
 const App = () => {
   const scrollRef = useRef(null);
-  const [navH, setNavH] = useState("7rem");
+  const [navH, setNavH] = useState("9rem");
   const [active, setActive] = useState("");
 
   const scrollHandler = () => {
     //! Navbar height by scrolling
     if (scrollRef.current.scrollTop > 0) {
-      setNavH("3rem");
+      setNavH("5rem");
     } else {
-      setNavH("7rem");
+      setNavH("9rem");
     }
 
     //! Navbar active colors by scrolling
