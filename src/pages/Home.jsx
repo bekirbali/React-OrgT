@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div className={`${styles.landing}`}>
         <div
-          className={`${styles.opening} h-[calc(100vh-112px)] flex gap-[15rem] justify-center items-center px-[26rem]`}
+          className={`${styles.opening} h-[calc(100vh-112px)] flex gap-[15rem] justify-center items-center`}
         >
           <div className={`${styles["romanian-text"]} text-center`}>
             <h1 className="font-[700] text-[3rem]">IMPREUNA</h1>

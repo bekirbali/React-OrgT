@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "../styles/navbar.module.scss";
 
 const NavBar = ({ navH, active, setActive }) => {

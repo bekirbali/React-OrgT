@@ -3,6 +3,7 @@
   top: 0;
   z-index: 555;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: white;
   justify-content: flex-end;
@@ -12,7 +13,6 @@
     display: flex;
     gap: 2rem;
     padding-right: 2rem;
-    margin: 1rem 0;
     li {
       text-align: center;
       a {
