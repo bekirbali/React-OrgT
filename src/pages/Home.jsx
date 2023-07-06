@@ -35,8 +35,8 @@ const Home = ({ iconClick, active }) => {
       <Projects />
       <Stories />
       <Team />
-      <Donate />
       <GetInvolved />
+      <Donate />
       {/* <Contact /> */}
     </>
   );

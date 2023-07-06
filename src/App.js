@@ -23,12 +23,10 @@ const App = () => {
     //! Navbar active colors by scrolling
     if (scrollRef.current.scrollTop === 0) {
       setActive("");
-    } else if (scrollRef.current.scrollTop > 14550) {
-      setActive("contact");
-    } else if (scrollRef.current.scrollTop > 13650) {
-      setActive("involved");
-    } else if (scrollRef.current.scrollTop > 12750) {
+    } else if (scrollRef.current.scrollTop > 13119) {
       setActive("donate");
+    } else if (scrollRef.current.scrollTop > 12219) {
+      setActive("involved");
     } else if (scrollRef.current.scrollTop > 11850) {
       setActive("team");
     } else if (scrollRef.current.scrollTop > 10950) {

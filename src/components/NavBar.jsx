@@ -72,19 +72,6 @@ const NavBar = ({ navH, active, setActive }) => {
         </li>
         <li>
           <a
-            className={active === "donate" ? styles.active : ""}
-            onClick={() =>
-              setTimeout(() => {
-                setActive("donate");
-              }, 500)
-            }
-            href="#donate"
-          >
-            Donate
-          </a>
-        </li>
-        <li>
-          <a
             className={active === "involved" ? styles.active : ""}
             onClick={() =>
               setTimeout(() => {
@@ -96,6 +83,20 @@ const NavBar = ({ navH, active, setActive }) => {
             Get Involved
           </a>
         </li>
+        <li>
+          <a
+            className={active === "donate" ? styles.active : ""}
+            onClick={() =>
+              setTimeout(() => {
+                setActive("donate");
+              }, 500)
+            }
+            href="#donate"
+          >
+            Donate
+          </a>
+        </li>
+
         {/* <li>
           <a
             className={active === "contact" ? styles.active : ""}
