@@ -1,10 +1,16 @@
 import styles from "../styles/navbar.module.scss";
 import logo from "../assets/logo.png";
+import { useTranslation } from "react-i18next";
+import roFlag from "../assets/roFlag.png";
+import enFlag from "../assets/usaFlag.png";
+import Flag from "react-flagkit";
 
 const NavBar = ({ navH, active, setActive }) => {
   const scrollHandler = () => {
     console.log(window.scrollY);
   };
+
+  const { t, i18n } = useTranslation();
 
   return (
     <div
@@ -13,8 +19,14 @@ const NavBar = ({ navH, active, setActive }) => {
       style={{ height: navH }}
     >
       <div className={styles.logo}>
-        <img src={logo} alt="" />
-        <h2>Change Lives</h2>
+        <img src={logo} alt="logo" className="ml-16 w-[50px]" />
+        <div className="flex flex-col items-center justify-center">
+          <h2>{t("change lives")}</h2>
+          <div className={styles.flags}>
+            <Flag country="RO" onClick={() => i18n.changeLanguage("ro")} />
+            <Flag country="US" onClick={() => i18n.changeLanguage("en")} />
+          </div>
+        </div>
       </div>
       <ul>
         <li>
@@ -27,7 +39,7 @@ const NavBar = ({ navH, active, setActive }) => {
             }
             href="#about"
           >
-            About
+            {t("about")}
           </a>
         </li>
 
@@ -41,7 +53,7 @@ const NavBar = ({ navH, active, setActive }) => {
             }
             href="#projects"
           >
-            Projects
+            {t("projects")}
           </a>
         </li>
         <li>
@@ -54,7 +66,7 @@ const NavBar = ({ navH, active, setActive }) => {
             }
             href="#stories"
           >
-            Stories
+            {t("stories")}
           </a>
         </li>
         <li>
@@ -67,7 +79,7 @@ const NavBar = ({ navH, active, setActive }) => {
             }
             href="#team"
           >
-            Team
+            {t("team")}
           </a>
         </li>
         <li>
@@ -80,7 +92,7 @@ const NavBar = ({ navH, active, setActive }) => {
             }
             href="#involved"
           >
-            Get Involved
+            {t("get involved")}
           </a>
         </li>
         <li>
@@ -93,7 +105,7 @@ const NavBar = ({ navH, active, setActive }) => {
             }
             href="#donate"
           >
-            Donate
+            {t("donate")}
           </a>
         </li>
 

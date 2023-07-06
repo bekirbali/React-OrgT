@@ -7,6 +7,7 @@ import Team from "./Team";
 
 import styles from "../styles/home.module.scss";
 import { BsArrowUpCircleFill } from "react-icons/bs";
+import Test from "../components/Test";
 
 const Home = ({ iconClick, active }) => {
   return (
