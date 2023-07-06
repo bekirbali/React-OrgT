@@ -1,0 +1,23 @@
+@import "../scss/variables";
+
+.team {
+  display: flex;
+  background-color: $teal;
+  padding: 3rem 2rem;
+  justify-content: space-evenly;
+  color: $whiteTeal;
+  h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    border-bottom: 2px solid $whiteTeal;
+    margin-bottom: 1rem;
+  }
+  .card {
+    box-shadow: 0 0 15px 5px rgba(218, 217, 217, 0.603);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .directors {
+  }
+}
