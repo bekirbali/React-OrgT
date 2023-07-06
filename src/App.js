@@ -5,11 +5,14 @@ import NavBar from "./components/NavBar";
 import { useRef, useState } from "react";
 import Footer from "./components/Footer";
 import i18n from "./utils/i18n";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
   const scrollRef = useRef(null);
   const [navH, setNavH] = useState("9rem");
   const [active, setActive] = useState("");
+
+  const { i18n } = useTranslation();
 
   const scrollHandler = () => {
     //! Navbar height by scrolling
@@ -44,6 +47,14 @@ const App = () => {
     scrollRef.current.scrollTo(0, 0);
   };
 
+  const changeRo = () => {
+    i18n.changeLanguage("ro");
+  };
+
+  const changeEn = () => {
+    i18n.changeLanguage("en");
+  };
+
   return (
     <div
       ref={scrollRef}
@@ -51,7 +62,13 @@ const App = () => {
       style={{ height: "100vh", overflow: "auto" }}
       onClick={() => console.log(scrollRef.current.scrollTop)}
     >
-      <NavBar navH={navH} active={active} setActive={setActive} />
+      <NavBar
+        navH={navH}
+        active={active}
+        setActive={setActive}
+        changeRo={changeRo}
+        changeEn={changeEn}
+      />
       <Routes>
         <Route
           path=""
