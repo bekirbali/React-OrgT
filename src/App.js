@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import { useRef, useState } from "react";
 import Footer from "./components/Footer";
-import GetInvolved from "./pages/GetInvolved";
-import Donate from "./pages/Donate";
 
 const App = () => {
   const scrollRef = useRef(null);
@@ -58,7 +56,6 @@ const App = () => {
           path=""
           element={<Home iconClick={iconClick} active={active} />}
         />
-        <Route path="/donate" element={<Donate />} />
       </Routes>
       <Footer />
     </div>

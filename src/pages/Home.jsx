@@ -1,5 +1,4 @@
 import About from "./About";
-import Contact from "./Contact";
 import Donate from "./Donate";
 import GetInvolved from "./GetInvolved";
 import Projects from "./Projects";
@@ -37,7 +36,6 @@ const Home = ({ iconClick, active }) => {
       <Team />
       <GetInvolved />
       <Donate />
-      {/* <Contact /> */}
     </>
   );
 };
