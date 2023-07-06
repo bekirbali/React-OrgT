@@ -72,7 +72,14 @@ const App = () => {
       <Routes>
         <Route
           path=""
-          element={<Home iconClick={iconClick} active={active} />}
+          element={
+            <Home
+              iconClick={iconClick}
+              active={active}
+              changeRo={changeRo}
+              changeEn={changeEn}
+            />
+          }
         />
       </Routes>
       <Footer />
