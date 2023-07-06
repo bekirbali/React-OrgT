@@ -1,16 +1,14 @@
 import styles from "../styles/navbar.module.scss";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
-import roFlag from "../assets/roFlag.png";
-import enFlag from "../assets/usaFlag.png";
 import Flag from "react-flagkit";
 
-const NavBar = ({ navH, active, setActive }) => {
+const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
   const scrollHandler = () => {
     console.log(window.scrollY);
   };
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div
@@ -23,8 +21,8 @@ const NavBar = ({ navH, active, setActive }) => {
         <div className="flex flex-col items-center justify-center">
           <h2>{t("change lives")}</h2>
           <div className={styles.flags}>
-            <Flag country="RO" onClick={() => i18n.changeLanguage("ro")} />
-            <Flag country="US" onClick={() => i18n.changeLanguage("en")} />
+            <Flag country="RO" onClick={changeRo} />
+            <Flag country="US" onClick={changeEn} />
           </div>
         </div>
       </div>
