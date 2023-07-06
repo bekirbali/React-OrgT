@@ -7,8 +7,9 @@ import Stories from "./Stories";
 import Team from "./Team";
 
 import styles from "../styles/home.module.scss";
+import { BsArrowUpCircleFill } from "react-icons/bs";
 
-const Home = () => {
+const Home = ({ iconClick, active }) => {
   return (
     <>
       <div className={`${styles.landing}`}>
@@ -24,6 +25,11 @@ const Home = () => {
             <h2 className="font-[500] text-[2rem]">We Can Change Lives!</h2>
           </div>
         </div>
+        {active && (
+          <button className={styles.icon} onClick={iconClick}>
+            <BsArrowUpCircleFill size={50} />
+          </button>
+        )}
       </div>
       <About />
       <Contact />

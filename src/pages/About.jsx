@@ -9,8 +9,10 @@ const About = () => {
         <h1>ASSOCIATION "CHANGED LIVES"</h1>
         <h3>Social reintegration of homeless people</h3>
       </div>
-      <div className={`${styles["about-content"]} flex items-center `}>
-        <img src="./about/5.JPG" alt="" className="w-1/2" />
+      <div
+        className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center `}
+      >
+        <img src="./about/20170410_140511.jpg" alt="" className="w-1/2" />
         <p>
           The program "change lives" aims to help homeless people in Bihor
           county to start by providing a living space, reintegration into the
@@ -20,16 +22,18 @@ const About = () => {
         </p>
       </div>
       <div
-        className={`${styles["about-content"]} flex flex-row-reverse items-center`}
+        className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
-        <img src="./about/7.JPG" alt="" className="w-1/2" />
+        <img src="./about/truckTrailer.jpg" alt="" className="w-1/2" />
         <p>
           The association benefits from a 7600 sq.m. plot of land, on which are
           located 2 truck trailers that have been isolated and converted into
           living spaces and 3 containers that are used as living spaces.
         </p>
       </div>
-      <div className={`${styles["about-content"]} flex items-center`}>
+      <div
+        className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
+      >
         <img src="./about/12.JPG" alt="" className="w-1/2" />
         <p>
           In total we currently have 8 families living in these accommodation
@@ -45,17 +49,19 @@ const About = () => {
         </p>
       </div>
       <div
-        className={`${styles["about-content"]} flex flex-row-reverse items-center`}
+        className={`${styles["about-content"]} ${styles["about-content-right"]}  flex flex-row-reverse items-center`}
       >
-        <img src="./about/15.JPG" alt="" className="w-1/2" />
+        <img src="./about/11.JPG" alt="" className="w-1/2" />
         <p>
           A 38 year old boy with severe myopia, i.e. almost blind, lived in a
           few rented flats after his parents died, but the pension didn't help
           him pay the rent so he ended up on the street.
         </p>
       </div>
-      <div className={`${styles["about-content"]} flex items-center`}>
-        <img src="./about/16.JPG" alt="" className="w-1/2" />
+      <div
+        className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
+      >
+        <img src="./about/4.JPG" alt="" className="w-1/2" />
         <p>
           A 43 year old woman, who was initially adopted, after her adoptive
           parents died, her brother who was also adopted, threatened her with
@@ -67,7 +73,7 @@ const About = () => {
         </p>
       </div>
       <div
-        className={`${styles["about-content"]} flex flex-row-reverse items-center`}
+        className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
         <img src="./about/DSC_0143.JPG" alt="" className="w-1/2" />
         <p>
@@ -76,8 +82,10 @@ const About = () => {
           the street.
         </p>
       </div>
-      <div className={`${styles["about-content"]} flex items-center`}>
-        <img src="./about/DSC_0817.JPG" alt="" className="w-1/2" />
+      <div
+        className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
+      >
+        <img src="./about/house.jpg" alt="" className="w-1/2" />
         <p>
           Within this project we have also built a house (which is not
           finished), so that we can make identity cards for those who live in
@@ -90,12 +98,12 @@ const About = () => {
         </p>
       </div>
       <div
-        className={`${styles["about-content"]} flex flex-row-reverse items-center`}
+        className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
-        <img src="./about/DSC_0124.JPG" alt="" className="w-1/2" />
-        <p>
-          <span>Why we need volunteers:</span>
-          <ul>
+        <img src="./about/DSC_0817.JPG" alt="" className="w-1/2" />
+        <ul>
+          <p>
+            <span>Why we need volunteers:</span>
             <li>
               - to help the elderly with housework (cleaning, teaching them how
               to cook)
@@ -119,10 +127,12 @@ const About = () => {
               - to teach English to the children of Cihei and eventually to play
               games with them
             </li>
-          </ul>
-        </p>
+          </p>
+        </ul>
       </div>
-      <div className={`${styles["about-content"]} flex items-center`}>
+      <div
+        className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
+      >
         <img src="./about/DSC_9181.JPG" alt="" className="w-1/2" />
         <p>
           We also have a program where we address disadvantaged people in Bihor
@@ -132,7 +142,7 @@ const About = () => {
         </p>
       </div>
       <div
-        className={`${styles["about-content"]} flex flex-row-reverse items-center`}
+        className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
         <img src="./about/13.jpg" alt="" className="w-1/2" />
         <p>
@@ -150,7 +160,9 @@ const About = () => {
           first marriage whom he had not seen for 15 years.
         </p>
       </div>
-      <div className={`${styles["about-content"]} flex items-center`}>
+      <div
+        className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
+      >
         <img src="./about/8.JPG" alt="" className="w-1/2" />
         <p>
           So far we managed to reintegrate 5 families, the biggest achievement
@@ -178,7 +190,7 @@ const About = () => {
         </p>
       </div>
       <div
-        className={`${styles["about-content"]} flex flex-row-reverse items-center`}
+        className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
         <img src="./about/DSC_01101.JPG" alt="" className="w-1/2" />
         <p>
@@ -189,8 +201,10 @@ const About = () => {
           in a rented flat.
         </p>
       </div>
-      <div className={`${styles["about-content"]} flex items-center`}>
-        <img src="./about/20170410_140511.jpg" alt="" className="w-1/2" />
+      <div
+        className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
+      >
+        <img src="./about/15.JPG" alt="" className="w-1/2" />
         <p>
           We succeeded for 2 families to integrate them in the labour market, to
           facilitate for 5 people to obtain an income (consisting of social aid,
