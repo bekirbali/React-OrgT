@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import { useRef, useState } from "react";
 import Footer from "./components/Footer";
-import i18n from "./utils/i18n";
 import { useTranslation } from "react-i18next";
+import "./utils/i18n";
 
 const App = () => {
   const scrollRef = useRef(null);

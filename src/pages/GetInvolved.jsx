@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "../styles/getInvolved.module.scss";
+import { useTranslation } from "react-i18next";
 
 const GetInvolved = () => {
+  const { t } = useTranslation();
   return (
     <div id="involved" className={styles.involved}>
-      <h1>Join this great community</h1>
+      <h1>{t("join this great community")}</h1>
       <form>
-        <input type="text" placeholder="Enter your Name" />
-        <input type="email" placeholder="Enter your email" />
-        <input type="number" placeholder="Enter your phone" />
-        <input type="number" placeholder="Enter your age" />
-        <button>Get Involved</button>
+        <input type="text" placeholder={t("your name")} />
+        <input type="email" placeholder={t("your email")} />
+        <input type="number" placeholder={t("your phone")} />
+        <input type="number" placeholder={t("your age")} />
+        <button>{t("get involved")}</button>
       </form>
     </div>
   );
