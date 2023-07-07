@@ -43,5 +43,11 @@
   "donation amount": "Enter donation amount",
   "contact us": "Contact Us",
   "phone": "Phone",
-  "email": "Email"
+  "email": "Email",
+  "donation": "Donation",
+  "name": "Name",
+  "last name": "Last Name",
+  "age": "Age",
+  "you have joined": "You have joined the community",
+  "thank you": "Thank you"
 }

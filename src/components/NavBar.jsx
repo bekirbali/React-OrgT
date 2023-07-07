@@ -95,7 +95,8 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
         </li>
         <li>
           <a
-            className={active === "donate" ? styles.active : ""}
+            // className={active === "donate" ? styles.active : ""}
+            className={styles.donate}
             onClick={() =>
               setTimeout(() => {
                 setActive("donate");

@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import "./utils/i18n";
 
 const App = () => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef();
   const [navH, setNavH] = useState("9rem");
   const [active, setActive] = useState("");
 

@@ -7,8 +7,10 @@ const Footer = () => {
   return (
     <>
       <div id="contact" className={`${styles.footer}`}>
-        <h1 className="text-center font-[700] text-[3rem]">Contact Us</h1>
-        <div className="flex justify-center gap-32  mt-6">
+        <h1 className="text-center font-[700] text-[3rem] ">
+          {t("contact us")}
+        </h1>
+        <div className="flex justify-center gap-24  mt-6">
           <div className={`${styles.email} flex flex-col items-center`}>
             <h2>
               <svg
