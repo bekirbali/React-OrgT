@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "../styles/team.module.scss";
+import { useTranslation } from "react-i18next";
 
 const Team = () => {
+  const { t } = useTranslation();
   return (
     <div id="team" className={styles.team}>
       <div className={`${styles.volunteers} ${styles.card}`}>
-        <h2>Our Volunteers</h2>
+        <h2>{t("our volunteers")}</h2>
         <ul>
           <li>James</li>
           <li>Michael</li>
@@ -20,7 +22,7 @@ const Team = () => {
         </ul>
       </div>
       <div className={`${styles.directors} ${styles.card}`}>
-        <h2>Board of Directors</h2>
+        <h2>{t("board of directors")}</h2>
         <ul>
           <li>Christopher</li>
           <li>Andrew</li>
@@ -28,7 +30,7 @@ const Team = () => {
         </ul>
       </div>
       <div className={`${styles.benefactors} ${styles.card}`}>
-        <h2>Our Benefactors</h2>
+        <h2>{t("our benefactors")}</h2>
         <ul>
           <li>James</li>
           <li>Michael</li>
