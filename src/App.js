@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import Footer from "./components/Footer";
 import { useTranslation } from "react-i18next";
 import "./utils/i18n";
+import "swiper/css";
 
 const App = () => {
   const scrollRef = useRef();
