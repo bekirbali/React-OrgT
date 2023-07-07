@@ -75,7 +75,7 @@ const About = () => {
       <div
         className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
       >
-        <img src="./about/DSC_9181.JPG" alt="" className="w-1/2" />
+        <img src="./about/DSC_9181.jpg" alt="" className="w-1/2" />
         <p>{t("we also have")}</p>
       </div>
       <div
