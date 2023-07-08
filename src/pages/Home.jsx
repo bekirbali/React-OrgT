@@ -8,7 +8,15 @@ import Team from "./Team";
 import styles from "../styles/home.module.scss";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { EffectFade, EffectCards, Controller } from "swiper/modules";
+import {
+  EffectFade,
+  EffectCards,
+  Controller,
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+} from "swiper/modules";
+
 import "swiper/css";
 import { useEffect, useState } from "react";
 
@@ -42,32 +50,33 @@ const Home = ({ iconClick, active }) => {
           </div>
         </div> */}
         <Swiper
-          className="text-center flex justify-center items-center"
-          slidesPerView={2}
-          modules={[Controller, EffectCards]}
-          controller={{ control: controlledSwiper }}
-          effect="cards"
+          className="swiper_container"
+          slidesPerView={"auto"}
+          effect="coverflow"
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
           onSwiper={setControlledSwiper}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          pagination={{ el: "", clickable: true }}
         >
           <SwiperSlide>
-            {" "}
-            <img src="./about/4.JPG" alt="" />
+            <img src="./about/4.JPG" alt="" style={{ width: "50px" }} />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img src="./about/5.JPG" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img src="./about/16.jpg" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img src="./about/20170410_140511.jpg" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <img src="./about/DSC_01101.JPG" alt="" />
           </SwiperSlide>
           {/* <div className="swiper">
             <div className="swiper-wrapper">
@@ -88,6 +97,14 @@ const Home = ({ iconClick, active }) => {
               </div>
             </div>
           </div> */}
+          <div className="slider-container">
+            <div className="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline">asdg</ion-icon>
+            </div>
+            <div className="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-forward-outline">asdg</ion-icon>
+            </div>
+          </div>
         </Swiper>
         {active && (
           <button className={styles.icon} onClick={iconClick}>
