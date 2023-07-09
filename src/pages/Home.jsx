@@ -27,74 +27,74 @@ import "swiper/css/navigation";
 const Home = ({ iconClick, active }) => {
   return (
     <>
-      {/* <div className={`${styles.landing}`}>
-      </div> */}
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={5}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img
-            src="/about/4.JPG"
-            alt="landing1"
-            style={{ width: "720px", height: "520px" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/about/5.JPG"
-            alt="landing2"
-            style={{ width: "720px", height: "520px" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/about/7.JPG"
-            alt="landing3"
-            style={{ width: "720px", height: "520px" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/about/8.JPG"
-            alt="landing4"
-            style={{ width: "720px", height: "520px" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/about/11.JPG"
-            alt="landing5"
-            style={{ width: "720px", height: "520px" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/about/12.JPG"
-            alt="landing5"
-            style={{ width: "720px", height: "520px" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/about/15.JPG"
-            alt="landing5"
-            style={{ width: "720px", height: "520px" }}
-          />
-        </SwiperSlide>
-      </Swiper>
+      <div className={`${styles.landing}`}>
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={5}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img
+              src="/about/4.JPG"
+              alt="landing1"
+              style={{ width: "720px", height: "520px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/5.JPG"
+              alt="landing2"
+              style={{ width: "720px", height: "520px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/7.JPG"
+              alt="landing3"
+              style={{ width: "720px", height: "520px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/8.JPG"
+              alt="landing4"
+              style={{ width: "720px", height: "520px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/11.JPG"
+              alt="landing5"
+              style={{ width: "720px", height: "520px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/12.JPG"
+              alt="landing5"
+              style={{ width: "720px", height: "520px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/15.JPG"
+              alt="landing5"
+              style={{ width: "720px", height: "520px" }}
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
       {active && (
         <button className={styles.icon} onClick={iconClick}>
           <BsArrowUpCircleFill size={50} />
