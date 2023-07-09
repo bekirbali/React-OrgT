@@ -3,7 +3,6 @@ import styles from "../styles/getInvolved.module.scss";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import gif from "../assets/loading.gif";
-import thankYou from "../assets/thankyou.png";
 
 const GetInvolved = () => {
   const { t } = useTranslation();
