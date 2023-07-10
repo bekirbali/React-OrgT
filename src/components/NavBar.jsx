@@ -228,20 +228,6 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
     //         {t("donate")}
     //       </a>
     //     </li>
-
-    //     {/* <li>
-    //       <a
-    //         className={active === "contact" ? styles.active : ""}
-    //         onClick={() =>
-    //           setTimeout(() => {
-    //             setActive("contact");
-    //           }, 500)
-    //         }
-    //         href="#contact"
-    //       >
-    //         Contact
-    //       </a>
-    //     </li> */}
     //   </ul>
     // </div>
   );
