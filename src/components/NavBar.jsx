@@ -53,7 +53,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
           </button>
         </div>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-[#f4fffbe3] border-gray-100 rounded-lg lg:bg-none md:flex-row md:space-x-8 md:mt-0 ">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-[#f4fffbe3] border-gray-100 rounded-lg lg:bg-transparent md:flex-row md:space-x-8 md:mt-0 ">
             <li>
               <a
                 href="#about"
