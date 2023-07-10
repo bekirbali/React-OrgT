@@ -12,7 +12,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
 
   return (
     <nav className={`${styles.navbar}`} style={{ height: navH }}>
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class=" flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#home" class="flex items-center">
           <img src={logo} className="h-8 mr-3" alt="Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -58,7 +58,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
                   }, 500)
                 }
               >
-                About
+                {t("about")}
               </a>
             </li>
             <li>
@@ -71,7 +71,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
                   }, 500)
                 }
               >
-                Projects
+                {t("projects")}
               </a>
             </li>
             <li>
@@ -84,7 +84,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
                   }, 500)
                 }
               >
-                Stories
+                {t("stories")}
               </a>
             </li>
             <li>
@@ -97,7 +97,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
                   }, 500)
                 }
               >
-                Team
+                {t("team")}
               </a>
             </li>
             <li>
@@ -110,7 +110,21 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
                   }, 500)
                 }
               >
-                Get Involved
+                {t("get involved")}
+              </a>
+            </li>
+            <li>
+              <a
+                // className={active === "donate" ? styles.active : ""}
+                className={styles.donate}
+                onClick={() =>
+                  setTimeout(() => {
+                    setActive("donate");
+                  }, 500)
+                }
+                href="#donate"
+              >
+                {t("donate")}
               </a>
             </li>
           </ul>
