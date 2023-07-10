@@ -12,19 +12,19 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
 
   return (
     <nav
-      className={`${styles.navbar} bg-white border-gray-200 dark:bg-gray-900`}
+      className={`${styles.navbar} dark:bg-gray-900`}
       style={{ height: navH }}
     >
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
+          <img src={logo} className="h-8 mr-3" alt="Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+            {t("change lives")}
           </span>
+          <div className={styles.flags}>
+            <Flag country="RO" onClick={changeRo} />
+            <Flag country="US" onClick={changeEn} />
+          </div>
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -33,7 +33,6 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
           aria-controls="navbar-default"
           aria-expanded="false"
         >
-          <span class="sr-only">Open main menu</span>
           <svg
             class="w-5 h-5"
             aria-hidden="true"
