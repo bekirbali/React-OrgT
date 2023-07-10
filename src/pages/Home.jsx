@@ -27,7 +27,7 @@ import "swiper/css/navigation";
 const Home = ({ iconClick, active }) => {
   return (
     <>
-      <div className={`${styles.landing}`}>
+      <div className={`${styles.landing}`} id="home">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
