@@ -11,12 +11,9 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
   const { t } = useTranslation();
 
   return (
-    <nav
-      className={`${styles.navbar} dark:bg-gray-900`}
-      style={{ height: navH }}
-    >
+    <nav className={`${styles.navbar}`} style={{ height: navH }}>
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center">
+        <a href="#home" class="flex items-center">
           <img src={logo} className="h-8 mr-3" alt="Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             {t("change lives")}
@@ -54,8 +51,12 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
             <li>
               <a
                 href="#about"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+                className={active === "about" ? styles.active : ""}
+                onClick={() =>
+                  setTimeout(() => {
+                    setActive("involved");
+                  }, 500)
+                }
               >
                 About
               </a>
@@ -63,7 +64,12 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
             <li>
               <a
                 href="#projects"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={active === "projects" ? styles.active : ""}
+                onClick={() =>
+                  setTimeout(() => {
+                    setActive("involved");
+                  }, 500)
+                }
               >
                 Projects
               </a>
@@ -71,7 +77,12 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
             <li>
               <a
                 href="#stories"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={active === "stories" ? styles.active : ""}
+                onClick={() =>
+                  setTimeout(() => {
+                    setActive("involved");
+                  }, 500)
+                }
               >
                 Stories
               </a>
@@ -79,7 +90,12 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
             <li>
               <a
                 href="#team"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={active === "team" ? styles.active : ""}
+                onClick={() =>
+                  setTimeout(() => {
+                    setActive("involved");
+                  }, 500)
+                }
               >
                 Team
               </a>
@@ -87,7 +103,12 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
             <li>
               <a
                 href="#involved"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={active === "involved" ? styles.active : ""}
+                onClick={() =>
+                  setTimeout(() => {
+                    setActive("involved");
+                  }, 500)
+                }
               >
                 Get Involved
               </a>
