@@ -48,105 +48,105 @@ const Home = ({ iconClick, active }) => {
             <img
               src="/about/4.JPG"
               alt="landing1"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/5.JPG"
               alt="landing2"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/7.JPG"
               alt="landing3"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/8.JPG"
               alt="landing4"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/11.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/12.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/13.jpg"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/15.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/16.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/20170410_140511.jpg"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/DSC_0124.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/DSC_0143.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/DSC_0817.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/DSC_01101.JPG"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="/about/DSC_9181.jpg"
               alt="landing5"
-              style={{ width: "1080px" }}
+              style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
         </Swiper>
