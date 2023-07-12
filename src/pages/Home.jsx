@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import About from "./About";
 import Donate from "./Donate";
 import GetInvolved from "./GetInvolved";
@@ -11,19 +9,12 @@ import styles from "../styles/home.module.scss";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  EffectCoverflow,
-  FreeMode,
-  Navigation,
-  Pagination,
-  Thumbs,
-} from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { click } from "@testing-library/user-event/dist/click";
 
 const Home = ({ iconClick, active }) => {
   return (
@@ -155,14 +146,18 @@ const Home = ({ iconClick, active }) => {
               style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
-          <div className="slider-controler">
-            <div className="swiper-button-prev slider-arrow">
+          <div className={styles["slider-controller"]}>
+            <div
+              className={`${styles["swiper-button-prev"]} ${styles["slider-arrow"]}`}
+            >
               <ion-icon name="arrow-back-outline"></ion-icon>
             </div>
-            <div className="swiper-button-next slider-arrow">
+            <div
+              className={`${styles["swiper-button-next"]}${styles["slider-arrow"]} `}
+            >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
-            <div className="swiper-pagination"></div>
+            <div className={styles["swiper-pagination"]}></div>
           </div>
         </Swiper>
       </div>
