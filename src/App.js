@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import { useTranslation } from "react-i18next";
 import "./utils/i18n";
 import "swiper/css";
-import "flowbite";
 
 const App = () => {
   const scrollRef = useRef();
