@@ -39,7 +39,7 @@ const Home = ({ iconClick, active }) => {
             clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="mySwiper"
+          className={styles["swiper_container"]}
         >
           <SwiperSlide>
             <img
