@@ -23,6 +23,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { click } from "@testing-library/user-event/dist/click";
 
 const Home = ({ iconClick, active }) => {
   return (
@@ -40,8 +41,13 @@ const Home = ({ iconClick, active }) => {
             modifier: 1,
             slideShadows: true,
           }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination]}
+          pagination={{ el: ".swiper-pagination", clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -149,6 +155,15 @@ const Home = ({ iconClick, active }) => {
               style={{ width: "720px", height: "420px", aspectRatio: "16/9" }}
             />
           </SwiperSlide>
+          <div className="slider-controler">
+            <div className="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div className="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div className="swiper-pagination"></div>
+          </div>
         </Swiper>
       </div>
       {active && (
