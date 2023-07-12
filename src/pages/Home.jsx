@@ -88,7 +88,63 @@ const Home = ({ iconClick, active }) => {
           </SwiperSlide>
           <SwiperSlide>
             <img
+              src="/about/13.jpg"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
               src="/about/15.JPG"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/16.JPG"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/20170410_140511.jpg"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/DSC_0124.JPG"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/DSC_0143.JPG"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/DSC_0817.JPG"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/DSC_01101.JPG"
+              alt="landing5"
+              style={{ width: "1080px" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/about/DSC_9181.jpg"
               alt="landing5"
               style={{ width: "1080px" }}
             />
