@@ -49,7 +49,7 @@ const Home = ({ iconClick, active }) => {
             delay: 3026,
             disableOnInteraction: false,
           }}
-          className={styles["swiper_container"]}
+          className={styles.swiper_container}
         >
           <SwiperSlide className={styles.swiper_slide}>
             <img src="/about/4.JPG" alt="landing1" />
