@@ -24,9 +24,9 @@ const Home = ({ iconClick, active }) => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={5}
+          slidesPerView={1}
           coverflowEffect={{
-            rotate: 30,
+            rotate: 0,
             stretch: 0,
             depth: 100,
             modifier: 1,
@@ -44,7 +44,7 @@ const Home = ({ iconClick, active }) => {
           <SwiperSlide className={styles.swiper_slide}>
             <img src="/about/4.JPG" alt="landing1" />
           </SwiperSlide>
-          {/* <SwiperSlide className={styles.swiper_slide}>
+          <SwiperSlide className={styles.swiper_slide}>
             <img src="/about/5.JPG" alt="landing2" />
           </SwiperSlide>
           <SwiperSlide className={styles.swiper_slide}>
@@ -61,7 +61,7 @@ const Home = ({ iconClick, active }) => {
           </SwiperSlide>
           <SwiperSlide className={styles.swiper_slide}>
             <img src="/about/16.JPG" alt="landing5" />
-          </SwiperSlide> */}
+          </SwiperSlide>
 
           <div className={styles["slider-controller"]}>
             <div
