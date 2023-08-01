@@ -9,10 +9,16 @@ import styles from "../styles/home.module.scss";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import {
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
@@ -24,11 +30,11 @@ const Home = ({ iconClick, active }) => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={1.25}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
-            depth: 200,
+            depth: 300,
             modifier: 1,
             slideShadows: true,
           }}
@@ -38,7 +44,11 @@ const Home = ({ iconClick, active }) => {
             prevEl: ".swiper-button-prev",
             clickable: true,
           }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+          autoplay={{
+            delay: 3026,
+            disableOnInteraction: false,
+          }}
           className={styles["swiper_container"]}
         >
           <SwiperSlide className={styles.swiper_slide}>
@@ -63,19 +73,9 @@ const Home = ({ iconClick, active }) => {
             <img src="/about/16.JPG" alt="landing5" />
           </SwiperSlide>
 
-          <div className={styles["slider-controller"]}>
-            <div
-              className={`${styles["swiper-button-prev"]} ${styles["slider-arrow"]}`}
-            >
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div
-              className={`${styles["swiper-button-next"]}${styles["slider-arrow"]} `}
-            >
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div className={styles["swiper-pagination"]}></div>
-          </div>
+          <div className="swiper-pagination"></div>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
         </Swiper>
       </div>
       {active && (
