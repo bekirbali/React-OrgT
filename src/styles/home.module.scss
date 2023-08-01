@@ -30,9 +30,10 @@
   .swiper_container {
     background-color: #2c00f062;
     height: 100%;
+    position: relative;
     .swiper_slide {
-      background-color: rgba(0, 255, 0, 0.212);
-
+      background-color: rgba(17, 179, 17, 0.788);
+      // height: 50%;
       border: 2px solid white;
       width: 33%;
       display: flex;
