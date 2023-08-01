@@ -24,11 +24,11 @@ const Home = ({ iconClick, active }) => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={1}
+          slidesPerView={3}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
-            depth: 100,
+            depth: 200,
             modifier: 1,
             slideShadows: true,
           }}
