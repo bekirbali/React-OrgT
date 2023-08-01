@@ -45,7 +45,7 @@ const App = () => {
 
   const iconClick = () => {
     // console.log(scrollRef.current.scrollTop);
-    // scrollRef.current.scrollTo(0, 0);
+    scrollRef.current.scrollTo(0, 0);
   };
 
   const changeRo = () => {
@@ -61,7 +61,7 @@ const App = () => {
       ref={scrollRef}
       onScroll={scrollHandler}
       style={{ height: "100vh", overflow: "auto" }}
-      // onClick={() => console.log(scrollRef.current.scrollTop)}
+      onClick={() => console.log(scrollRef.current.scrollTop)}
     >
       <NavBar
         navH={navH}
