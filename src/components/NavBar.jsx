@@ -17,17 +17,17 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
       onClick={scrollHandler}
     >
       <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
-        <div className="flex">
+        <div className="flex items-center gap-3">
           <a href="#home" class="flex items-center">
             <img src={logo} className="h-8 mr-3" alt="Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               {t("change lives")}
             </span>
-            <div className={styles.flags}>
-              <Flag country="RO" onClick={changeRo} />
-              <Flag country="US" onClick={changeEn} />
-            </div>
           </a>
+          <div className={styles.flags}>
+            <Flag country="RO" onClick={changeRo} />
+            <Flag country="US" onClick={changeEn} />
+          </div>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
