@@ -25,90 +25,23 @@
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  height: calc(100vh - 144px);
 
   .swiper_container {
-    padding: 2rem 0;
-    position: relative;
-
-    .swiper-slide {
-      width: 37rem;
-      height: 42rem;
-      position: relative;
-
-      img {
-        width: 37rem;
-        height: 42rem;
-        border-radius: 2rem;
-        object-fit: cover;
-      }
+    height: 100%;
+    .swiper_slide {
+      background-color: red;
+      border: 2px solid white;
+      width: 50rem;
+      height: 500px;
+      // img {
+      //   height: 100%;
+      // }
     }
-
-    .slider-controller {
-      position: relative;
-      bottom: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .swiper-button-next {
-        left: 58% !important;
-        transform: translateX(-58%) !important;
-      }
-
-      .slider-arrow {
-        background: var(--white);
-        width: 3.5rem;
-        height: 3.5rem;
-        border-radius: 50%;
-        left: 42%;
-        transform: translateX(-42%);
-        filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-
-        ion-icon {
-          font-size: 2rem;
-          color: #222224;
-        }
-
-        &::after {
-          content: "";
-        }
-      }
-
-      .swiper-pagination {
-        position: relative;
-        width: 15rem !important;
-        bottom: 1rem;
-
-        .swiper-pagination-bullet {
-          filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-        }
-
-        .swiper-pagination-bullet-active {
-          background: var(--primary);
-        }
-      }
-    }
-  }
-
-  @media (max-width: 500px) {
-    .swiper_container {
-      height: 47rem;
-    }
-    .swiper-slide {
-      width: 28rem !important;
-      height: 36rem !important;
-    }
-    .swiper-slide img {
-      width: 28rem !important;
-      height: 36rem !important;
-    }
-  }
-
-  .swiper-slide-shadow-left,
-  .swiper-slide-shadow-right {
-    display: none;
   }
 }
+
+//* to up icon
 .icon {
   position: fixed;
   bottom: 3rem;
