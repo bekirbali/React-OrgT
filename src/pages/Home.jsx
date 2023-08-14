@@ -67,10 +67,10 @@ const Home = ({ iconClick, active }) => {
             <img src="/about/13.jpg" alt="landing5" />
           </SwiperSlide>
           <SwiperSlide className={styles.swiper_slide}>
-            <img src="/about/15.JPG" alt="landing5" />
+            <img src="/about/15.JPG" alt="landing6" />
           </SwiperSlide>
           <SwiperSlide className={styles.swiper_slide}>
-            <img src="/about/16.JPG" alt="landing5" />
+            <img src="/about/16.jpg" alt="landing7" />
           </SwiperSlide>
 
           <div className="swiper-pagination"></div>
