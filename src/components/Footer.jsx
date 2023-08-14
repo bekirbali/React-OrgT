@@ -56,7 +56,7 @@ const Footer = () => {
               {t("email")}
             </h2>
             <h3>
-              <a href="mailto:togetherwestrong@gmail.com">
+              <a href="mailto:bfbali43@gmail.com">
                 {" "}
                 togetherwestrong@gmail.com
               </a>
