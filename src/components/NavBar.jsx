@@ -16,7 +16,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
       style={{ height: navH }}
       onClick={scrollHandler}
     >
-      <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className=" flex flex-wrap w-full items-center justify-between mx-auto p-4">
         <div className="flex items-center gap-3">
           <a href="#home" class="flex items-center">
             <img src={logo} className="h-8 mr-3" alt="Logo" />
