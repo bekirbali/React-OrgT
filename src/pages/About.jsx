@@ -14,49 +14,69 @@ const About = () => {
       <div
         className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center `}
       >
-        <img src="./about/20170410_140511.jpg" alt="" className="w-1/2" />
+        <img
+          loading="lazy"
+          src="./about/20170410_140511.jpg"
+          alt=""
+          className="w-1/2"
+        />
         <p>{t("the program")}</p>
       </div>
       <div
         className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
-        <img src="./about/truckTrailer.jpg" alt="" className="w-1/2" />
+        <img
+          loading="lazy"
+          src="./about/truckTrailer.jpg"
+          alt=""
+          className="w-1/2"
+        />
         <p>{t("the association")}</p>
       </div>
       <div
         className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
       >
-        <img src="./about/12.JPG" alt="" className="w-1/2" />
+        <img loading="lazy" src="./about/12.JPG" alt="" className="w-1/2" />
         <p>{t("in total")}</p>
       </div>
       <div
         className={`${styles["about-content"]} ${styles["about-content-right"]}  flex flex-row-reverse items-center`}
       >
-        <img src="./about/11.JPG" alt="" className="w-1/2" />
+        <img loading="lazy" src="./about/11.JPG" alt="" className="w-1/2" />
         <p>{t("old boy")}</p>
       </div>
       <div
         className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
       >
-        <img src="./about/4.JPG" alt="" className="w-1/2" />
+        <img loading="lazy" src="./about/4.JPG" alt="" className="w-1/2" />
         <p>{t("old woman")}</p>
       </div>
       <div
         className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
-        <img src="./about/DSC_0143.JPG" alt="" className="w-1/2" />
+        <img
+          loading="lazy"
+          src="./about/DSC_0143.JPG"
+          alt=""
+          className="w-1/2"
+        />
         <p>{t("one woman")}</p>
       </div>
       <div
         className={`${styles["about-content"]} ${styles["about-content-left"]} flex items-center`}
       >
-        <img src="./about/house.jpg" alt="" className="w-1/2" />
+        <img loading="lazy" src="./about/house.jpg" alt="" className="w-1/2" />
         <p>{t("within this project")}</p>
       </div>
       <div
         className={`${styles["about-content"]} ${styles["about-content-right"]} flex flex-row-reverse items-center`}
       >
-        <img src="./about/DSC_0817.JPG" alt="" className="w-1/2" />
+        <img
+          loading="lazy"
+          src="./about/DSC_0817.JPG"
+          alt=""
+          className="w-1/2"
+        />
         <ul>
           <p>
             <span>{t("we need")}</span>
