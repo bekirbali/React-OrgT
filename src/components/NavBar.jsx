@@ -16,17 +16,19 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
       style={{ height: navH }}
       onClick={scrollHandler}
     >
-      <div className=" flex flex-wrap w-full items-center justify-between mx-auto p-4">
-        <div className="flex items-center gap-3">
-          <a href="#home" class="flex items-center">
-            <img src={logo} className="h-8 mr-3" alt="Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              {t("change lives")}
-            </span>
-          </a>
-          <div className={styles.flags}>
-            <Flag country="RO" onClick={changeRo} />
-            <Flag country="US" onClick={changeEn} />
+      <div className="flex flex-wrap w-full items-center justify-center lg:justify-between mx-auto p-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="md:flex items-center gap-2">
+            <a href="#home" className="flex items-center">
+              <img src={logo} className="h-8 mr-3" alt="Logo" />
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                {t("change lives")}
+              </span>
+            </a>
+            <div className={styles.flags}>
+              <Flag country="RO" onClick={changeRo} />
+              <Flag country="US" onClick={changeEn} />
+            </div>
           </div>
           <button
             data-collapse-toggle="navbar-default"
@@ -52,8 +54,8 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
             </svg>
           </button>
         </div>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-[#f4fffbe3] border-gray-100 rounded-lg lg:bg-transparent md:flex-row md:space-x-8 md:mt-0 ">
+        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 bg-[#f4fffbe3] border-gray-100 rounded-lg md:bg-transparent md:flex-row md:mt-0 ">
             <li>
               <a
                 href="#about"
@@ -67,7 +69,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
                 {t("about")}
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#projects"
                 className={active === "projects" ? styles.active : ""}
@@ -79,8 +81,8 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
               >
                 {t("projects")}
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a
                 href="#stories"
                 className={active === "stories" ? styles.active : ""}
@@ -92,7 +94,7 @@ const NavBar = ({ navH, active, setActive, changeRo, changeEn }) => {
               >
                 {t("stories")}
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#team"
